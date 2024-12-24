@@ -22,6 +22,17 @@ ArgoVisor is a monitoring service for ArgoCD clusters that provides real-time st
 - Access to ArgoCD clusters
 - Slack webhook URL (for notifications)
 
+## 📊 Architecture
+
+```mermaid
+graph TD
+    A[Frontend - Vue.js] --> B[API Gateway]
+    B --> C[ArgoVisor Backend]
+    C --> D[ArgoCD Clusters]
+    C --> E[Slack Integration]
+    C --> F[Cache Layer]
+```
+
 ## 🚀 Quick Start
 
 ### Using Node.js
