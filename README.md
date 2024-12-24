@@ -109,7 +109,7 @@ const clusters = {
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
-| `/test` | GET | Health check endpoint |
+| `/health` | GET | Health check endpoint |
 | `/metrics` | GET | Get current metrics for all clusters |
 | `/applications` | GET | List all applications and their status |
 | `/status` | GET | Get service status and last update time |
